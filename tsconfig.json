@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    //"module": "commonjs",
+    "esModuleInterop": true,
+    "module": "ES2022",
+    "target": "es2017",
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "lib": [
+      "dom", "DOM.Iterable", "ESNext"
+    ],
+  },
+  "lib": ["es2015"]
+}
