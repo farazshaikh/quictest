@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
-    //"module": "commonjs",
-    "esModuleInterop": true,
-    "module": "ES2022",
+    "module": "ESNext",
     "target": "es2017",
-    "moduleResolution": "node",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
     "skipLibCheck": true,
     "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
     "outDir": "dist",
     "lib": [
       "dom", "DOM.Iterable", "ESNext"
