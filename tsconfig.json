@@ -1,16 +1,14 @@
 {
   "compilerOptions": {
-    "module": "ESNext",
-    "target": "es2017",
-    "moduleResolution": "Node",
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "sourceMap": true,
+    "module": "CommonJS",             // Use CommonJS for better compatibility
+    "target": "ES2017",               // Keep ES2017 for async/await support
+    "moduleResolution": "Node",       // Node.js-style module resolution
+    "esModuleInterop": true,          // Support CommonJS default imports
     "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
     "outDir": "dist",
-    "lib": [
-      "dom", "DOM.Iterable", "ESNext"
-    ],
-  },
-  "lib": ["es2015"]
+    "sourceMap": true,
+    "strict": true,                   // Enforce stricter checks
+    "lib": ["dom", "DOM.Iterable", "ESNext"]
+  }
 }
