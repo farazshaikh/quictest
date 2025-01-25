@@ -174,7 +174,7 @@ async function main() {
     publicExponent: new Uint8Array([1, 0, 1]),
     modulusLength: 2048,
   };
-  const keys: CryptoKeyPair = await crypto.subtle.generateKey(alg, false, [
+  const keys: CryptoKeyPair = await crypto.subtle.generateKey(alg, true, [
     "sign",
     "verify",
   ]);
@@ -200,6 +200,11 @@ async function main() {
     },
     logger: logger.getChild("QUICServer"),
   });
+
+  await quicServer.start({
+    port: 3090,
+  });
+  console.log(quicServer.port);
 }
 
 main();
